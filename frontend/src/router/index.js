@@ -8,7 +8,7 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: Home,
-      meta: { title: 'Timer' }, // Add title here
+      meta: { title: 'Stopwatch' }, // Add title here
     },
     // {
     //   path: '/about',
@@ -22,7 +22,7 @@ const router = createRouter({
 })
 
 router.beforeEach((to, from, next) => {
-  const defaultTitle = 'Timer' // Fallback title
+  const defaultTitle = 'Stopwatch' // Fallback title
   document.title = String(to.meta.title) || defaultTitle
   next() // Don't forget to call next() to resolve the navigation
 })

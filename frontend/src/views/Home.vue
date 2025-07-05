@@ -1,12 +1,12 @@
 <script setup>
-import Timer from '@/components/Timer.vue'
+import Stopwatch from '@/components/Stopwatch.vue'
 </script>
 
 <template>
   <div class="main-con">
-    <h1>Timer</h1>
-    <div class="timer-con">
-      <Timer />
+    <h1>Stopwatch</h1>
+    <div class="stopwatch-con">
+      <Stopwatch />
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ import Timer from '@/components/Timer.vue'
     margin: 1rem;
   }
 
-  .timer-con {
+  .stopwatch-con {
     display: flex;
     justify-content: center;
     align-items: center;
