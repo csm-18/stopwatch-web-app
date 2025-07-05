@@ -1,8 +1,13 @@
-<script setup></script>
+<script setup>
+import Timer from '@/components/Timer.vue'
+</script>
 
 <template>
   <div class="main-con">
     <h1>Timer</h1>
+    <div class="timer-con">
+      <Timer />
+    </div>
   </div>
 </template>
 <style scoped lang="scss">
@@ -22,6 +27,12 @@
     border-radius: 50px;
     padding: 0.8rem 5rem;
     margin: 1rem;
+  }
+
+  .timer-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 </style>
